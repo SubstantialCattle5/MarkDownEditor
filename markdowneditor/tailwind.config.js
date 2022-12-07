@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        darkest : 'rgb(37, 23, 73)' , 
-        darker : 'rgb(38, 49, 89)' , 
-        dark : 'rgb(73, 85, 121)',
-        light: 'rgb(255, 251, 235)' 
+        darkest : 'rgb(34, 40, 49)' , 
+        darker : 'rgb(57, 62, 70)' , 
+        dark : 'rgb(0, 173, 181)',
+        light: 'rgb(238, 238, 238)' 
       },
     },
   },
