@@ -1,12 +1,10 @@
 import { useState } from "react";
 
-export const Editor = () => {
-  // states
-  const [data, setData] = useState("Type something awesome!");
-
+export const Editor = (props) => {
   // handlers
   const dataHandler = (event) => {
-    setData(event.target.value);
+    event.preventDefault();
+    props.addData(event.target.value);
   };
 
   return (
@@ -14,7 +12,7 @@ export const Editor = () => {
       <form className="h-full w-full">
         <textarea
           className="w-full h-full text-sm text-light border-darker bg-darker focus:border-blue-500 rounded-lg "
-          value={data}
+          value={props.data}
           onChange={dataHandler}
         ></textarea>
       </form>
